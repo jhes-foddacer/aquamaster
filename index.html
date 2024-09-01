@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamentos Aquáticos Ltda</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos personalizados */
+        .navbar {
+            background-color: #4dd6cf;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #ffffff !important;
+        }
+
+        .jumbotron {
+            background-color: #1c9dba;
+            color: #ffffff;
+        }
+
+        .btn-primary {
+            background-color: #1c9dba;
+            border-color: #1c9dba;
+        }
+
+        .btn-primary:hover {
+            background-color: #4dd6cf;
+            border-color: #4dd6cf;
+        }
+
+        h4 {
+            color: #4dd6cf;
+            margin-top: 30px;
+        }
+
+        .card-title {
+            color: #1c9dba;
+        }
+
+        footer {
+            background-color: #1c9dba;
+            color: #ffffff;
+        }
+
+        .accordion-button {
+            background-color: #4dd6cf;
+            color: #ffffff;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #1c9dba;
+            color: #ffffff;
+        }
+
+        .accordion-body {
+            color: #333;
+        }
+
+        /* Ajuste no tamanho das imagens */
+        .card-img-top {
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Estilos para depoimentos */
+        .testimonial {
+            background-color: #f8f9fa;
+            padding: 30px 0;
+        }
+
+        .testimonial-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+        }
+
+        .testimonial-item p {
+            font-style: italic;
+        }
+
+        .testimonial-item .name {
+            font-weight: bold;
+        }
+
+        .testimonial-item .date {
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">AquaMaster</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Introdução ao site -->
+<div class="container py-5" style="background-color: #1c9dba; padding: 20px;">
+    <div class="row align-items-center">
+        <!-- Coluna da Imagem de Fundo -->
+        <div class="col-md-6">
+            <div class="d-flex justify-content-center align-items-center" style="height: 100%; background-image: url('Aquamaster/logo.png'); background-size: contain; background-position: center; background-repeat: no-repeat; height: 400px;">
+                <!-- Imagem centralizada -->
+            </div>
+        </div>
+        <!-- Barra de Separação -->
+        <div class="col-md-1 d-none d-md-block">
+            <div style="border-left: 1px solid #ddd; height: 100%;"></div>
+        </div>
+        <!-- Coluna do Texto -->
+        <div class="col-md-5 text-center">
+            <h1 class="display-4 text-white">AquaMaster</h1>
+            <p class="lead text-white">Sua Jornada na Água Começa Aqui!</p>
+            <a href="#" class="btn" style="background-color: #4dd6cf; color: #fff;">Saiba Mais</a>
+        </div>
+    </div>
+</div>
+
+
+
+    
+
+
+    <!-- Sobre a Empresa -->
+    <div class="container">
+        <h4>Sobre Nós</h4>
+        <p>
+            A empresa foi fundada em 2024 por dois amigos que compartilham uma paixão pela natação. Crescendo em uma cidade
+            litorânea, onde o mar sempre fez parte de suas vidas, decidiram criar uma empresa que oferecesse aulas de natação de
+            alta qualidade, focadas tanto no aprendizado técnico quanto no desenvolvimento pessoal dos alunos.
+            Com o objetivo de tornar a natação acessível para todos, a empresa começou com uma pequena piscina alugada e algumas
+            turmas. O compromisso com a excelência logo atraiu a atenção da comunidade local, levando ao crescimento rápido da
+            empresa. Hoje, é reconhecida como um centro de desenvolvimento aquático, onde cada aluno recebe atenção individualizada
+            e é incentivado a superar seus limites na água.
+        </p>
+        <p><strong>Endereço:</strong> Av. Nereu Ramos, 1191 - Palmital, Chapecó - SC, 89812-243</p>
+        <p><strong>Telefone:</strong> (49) 98815-6608</p>
+
+        <!-- Visão e Valores -->
+        <h4>Visão e Valores</h4>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Missão
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Proporcionar ensino de natação de alta qualidade que inspire confiança e
+                        bem-estar para pessoas de todas as idades e habilidades.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Visão
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Ser a principal referência em desenvolvimento aquático, promovendo um
+                        estilo de vida saudável e ativo em nossa comunidade e além.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Valores
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Excelência, inclusão, comprometimento, inovação e comunidade orientam
+                        todas as nossas ações e serviços.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Profissionais -->
+        <h4>Nossos Profissionais</h4>
+        <p>
+            Os profissionais da empresa são altamente qualificados e possuem vasta experiência no ensino da natação e no
+            desenvolvimento aquático. Cada instrutor é certificado por instituições reconhecidas, garantindo um padrão elevado
+            de qualidade nas aulas. Muitos deles têm formação em Educação Física e especializações em áreas como treinamento
+            aquático, salvamento e primeiros socorros, além de anos de prática tanto como nadadores quanto como treinadores.
+        </p>
+        <p>
+            Com um compromisso inabalável com a segurança e o progresso dos alunos, nossa equipe se destaca por sua capacidade de
+            adaptar o ensino às necessidades individuais, promovendo um ambiente de aprendizado inclusivo e motivador.
+        </p>
+
+        <!-- Cards de Profissionais -->
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="card" style="width: 20rem;">
+                    <img src="Aquamaster/profissionais2.png" class="card-img-top"
+                        alt="Atonio Montanha">
+                    <div class="card-body">
+                        <p class="card-text">Antonio Montanha. Administrador e cofundador.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card" style="width: 20rem;">
+                    <img src="Aquamaster/profissionais1.png" class="card-img-top"
+                        alt="Jessica Martinez">
+                    <div class="card-body">
+                        <p class="card-text">Jessica Martinez. Professora e cofundadora.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Serviços -->
+        <h4>Nossos Serviços</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="Aquamaster/servicos1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Aulas de Natação para Bebês</h5>
+                        <p class="card-text">As aulas de natação para bebês são projetadas para introduzir os pequenos ao ambiente
+                            aquático de forma segura e divertida, promovendo o desenvolvimento motor e a adaptação ao meio.</p>
+                        <a href="https://www.youtube.com/watch?v=3S_o18NFAmc" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="Aquamaster/servicos2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Treinamento de Habilidades Aquáticas</h5>
+                        <p class="card-text">Esse serviço oferece treinamento intensivo focado em habilidades essenciais,
+                            como técnicas de natação, resgate aquático e controle da respiração.</p>
+                        <a href="https://www.youtube.com/watch?v=3S_o18NFAmc" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="Aquamaster/servicos3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Treinamento para Gestantes</h5>
+                        <p class="card-text">O treinamento de natação para gestantes é um serviço especializado que oferece
+                            exercícios aquáticos seguros e eficazes para mulheres grávidas.</p>
+                        <a href="https://www.youtube.com/watch?v=3S_o18NFAmc" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Blog -->
+ <h4>Blog</h4>
+<style>
+    .card-img-top {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .card-img-small {
+        max-width: 50%;
+        margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    }
+</style>
+
+<div class="container my-5">
+    <!-- Postagem 1 -->
+    <div class="card mb-4">
+        <img src="Aquamaster/blog1.png" class="card-img-top card-img-small" alt="Crianças sorridentes na piscina">
+        <div class="card-body">
+            <h5 class="card-title">A Importância da Natação para a Saúde Infantil</h5>
+            <p class="card-text">
+                A natação é uma atividade essencial para o desenvolvimento saudável das crianças. Além de ser uma habilidade vital que pode salvar vidas, aprender a nadar oferece uma série de benefícios para a saúde e o bem-estar dos pequenos.
+                <br><br>
+                Quando as crianças começam a nadar cedo, elas desenvolvem força muscular, resistência e coordenação motora. A água proporciona um ambiente seguro e de baixo impacto para o exercício, ideal para fortalecer o corpo e melhorar a flexibilidade sem sobrecarregar as articulações. Além disso, a natação é uma excelente forma de estimular o desenvolvimento cognitivo, pois as crianças aprendem a seguir instruções e a resolver problemas enquanto estão na água.
+                <br><br>
+                Iniciar as aulas de natação também pode ajudar a melhorar a autoestima das crianças, promovendo um sentimento de realização ao aprender uma nova habilidade. A interação social com outras crianças durante as aulas também contribui para o desenvolvimento social e emocional.
+                <br><br>
+                Para mais informações sobre os benefícios da natação para crianças, visite <a href="#">aqui</a>.
+            </p>
+            <p class="card-text"><small class="text-muted">Por Maria Silva | 18 de agosto de 2024, 10:00</small></p>
+            <p class="card-text"><small class="text-muted">Fonte: KidsHealth - Swimming for Kids</small></p>
+        </div>
+    </div>
+
+    <!-- Postagem 2 -->
+    <div class="card mb-4">
+        <img src="Aquamaster/blog2.png" class="card-img-top card-img-small" alt="Fisioterapeuta ajudando um paciente em uma piscina terapêutica">
+        <div class="card-body">
+            <h5 class="card-title">Como a Natação Pode Auxiliar na Recuperação de Lesões</h5>
+            <p class="card-text">
+                A natação é uma forma eficaz de reabilitação para pessoas que estão se recuperando de lesões. Devido ao seu baixo impacto nas articulações e à capacidade da água de suportar o corpo, a natação oferece um ambiente ideal para a reabilitação.
+                <br><br>
+                Quando nadamos, a água reduz a pressão sobre as articulações e os músculos, o que ajuda a minimizar o risco de agravar lesões existentes. Isso permite que os indivíduos realizem exercícios que fortalecem os músculos e aumentam a mobilidade sem causar dor ou desconforto adicional.
+                <br><br>
+                Além disso, a natação promove a circulação sanguínea e a recuperação muscular, acelerando o processo de cicatrização. A resistência natural da água ajuda a fortalecer o corpo de forma equilibrada, promovendo uma recuperação mais rápida e completa.
+                <br><br>
+                Para informações detalhadas sobre como a natação pode ser benéfica para a reabilitação, consulte o artigo <a href="#">aqui</a>.
+            </p>
+            <p class="card-text"><small class="text-muted">Por João Pereira | 18 de agosto de 2024, 15:00</small></p>
+            <p class="card-text"><small class="text-muted">Fonte: Physio-pedia - Swimming in Rehabilitation</small></p>
+        </div>
+    </div>
+</div>
+
+
+        <!-- Depoimentos de Clientes -->
+        <div class="testimonial text-center">
+            <div class="container">
+                <h4>Depoimentos de Clientes</h4>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="testimonial-item">
+                            <p>"As aulas de natação para bebês foram uma experiência incrível para nosso filho! Ele adora a água e
+                                nós, como pais, nos sentimos seguros sabendo que ele está em boas mãos."</p>
+                            <p class="name">Ana Paula Silva</p>
+                            <p class="date">15 de março de 2024</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial-item">
+                            <p>"Eu nunca imaginei que um dia aprenderia a nadar, mas os instrutores da empresa tornaram isso
+                                possível. Eles foram pacientes, profissionais e me ajudaram a superar meu medo de água."</p>
+                            <p class="name">Carla Martins</p>
+                            <p class="date">2 de fevereiro de 2024</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial-item">
+                            <p>"Treinar com a equipe da empresa fez toda a diferença na minha performance. Eu me sinto mais preparado
+                                e confiante para as competições, graças ao suporte incrível que recebi."</p>
+                            <p class="name">Pedro Almeida</p>
+                            <p class="date">28 de abril de 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Treinamentos Aquáticos Ltda. Todos os direitos reservados.</p>
+            <p>
+                <a href="#" class="text-white">Política de Privacidade</a> |
+                <a href="#" class="text-white">Termos de Uso</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
